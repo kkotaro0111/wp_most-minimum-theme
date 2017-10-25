@@ -28,7 +28,7 @@ function get_thumbnail_url($size = 'thumbnail'){
 
 /**
  * Register our sidebars and widgetized areas.
- *
+ * https://wpdocs.osdn.jp/%E3%83%86%E3%83%BC%E3%83%9E%E3%81%AE%E3%82%A6%E3%82%A3%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88%E5%AF%BE%E5%BF%9C
  */
 /*
 function widgets_initialize() {
