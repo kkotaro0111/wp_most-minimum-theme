@@ -46,3 +46,31 @@ function widgets_initialize() {
 add_action( 'widgets_init', 'widgets_initialize' );
 */
 
+
+
+/**
+ * インラインスタイルで、background-imageを指定するためのショートコード
+ * usage: <div class="hoge" [background_image_style path='fuga.jpg']>
+ * @param array $atts
+ * @return string
+ */
+function background_image_style( $atts = array() ){
+  $a = shortcode_atts(array(
+    'path' => ''
+  ), $atts);
+  return 'style="background-image: url(\'' . get_template_directory_uri() . '/common/images/' . $a['path'] . '\');"';
+}
+add_shortcode( 'background_image_style', 'background_image_style' );
+
+/**
+ * 画像ディレクトリのパスを返すショートコード
+ * imgのsrc属性内でしか使えない
+ * usage: <img src="[image_path]fuga.jpg">
+ * @return string
+ */
+function image_path( ){
+  return get_template_directory_uri() . '/common/images/';
+}
+add_shortcode( 'image_path', 'image_path' );
+
+
