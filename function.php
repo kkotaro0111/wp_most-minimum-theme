@@ -26,3 +26,23 @@ function get_thumbnail_url($size = 'thumbnail'){
 }
 
 
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+/*
+function widgets_initialize() {
+  register_sidebar(
+     array(
+      'name' => 'Widget_1',
+      'id' => 'widget_1',
+      'before_widget' => '<div>',
+      'after_widget' => '</div>',
+      'before_title' => '<h2 class="rounded">',
+      'after_title' => '</h2>',
+    )
+  );
+}
+add_action( 'widgets_init', 'widgets_initialize' );
+*/
+
