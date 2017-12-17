@@ -24,8 +24,8 @@ function is_exist_thumbnail($size = 'original'){
  * @param string $size
  * @return mixed
  */
-function get_thumbnail_url($size = 'thumbnail'){
-  $thumb_id = get_post_thumbnail_id();
+function get_thumbnail_url($size = 'thumbnail', $post = null){
+  $thumb_id = get_post_thumbnail_id( $post );
   $eye_img = wp_get_attachment_image_src($thumb_id, $size);
   //var_dump($thumb_id);
   //var_dump($eye_img);
