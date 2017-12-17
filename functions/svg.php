@@ -28,3 +28,10 @@ function shortcode_svg($atts){
 }
 add_shortcode('svg', 'shortcode_svg');
 
+/**
+ * imgタグとしてsvgを埋め込みたい場合はコレを使う
+ */
+function svg_tag($svg_name, $alt = ''){
+  $file = get_svg($svg_name);
+  return '<img src="'.$file.'" alt="'.$alt.'" />';
+}
