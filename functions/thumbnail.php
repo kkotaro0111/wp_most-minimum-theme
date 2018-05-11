@@ -37,6 +37,7 @@ function get_thumbnail_url($size = 'thumbnail', $post = null){
 
 function add_image_sizes(){
   // Usage: add_image_size( $name, $width, $height, $crop );
+  add_image_size("ogp", 1200, 630, true); // OGP画像用
 }
 
 // add_image_sizes();
