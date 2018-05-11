@@ -31,3 +31,12 @@ function get_thumbnail_url($size = 'thumbnail', $post = null){
   //var_dump($eye_img);
   return $eye_img[0];
 }
+
+
+// 画像リサイズの任意設定
+
+function add_image_sizes(){
+  // Usage: add_image_size( $name, $width, $height, $crop );
+}
+
+// add_image_sizes();
